@@ -1,22 +1,39 @@
 html {
+  box-sizing: border-box;
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 1em;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 img {
-  display: inline-block;
+  color: #666;
+  display: block;
   max-width: 25rem;
   width: 100%;
-  padding: 0 2em 0 0;
   margin: 0;
+  float: left;
+}
+
+h2 {
+  margin: 1.5rem;
+}
+
+body {
+  margin: 0;
+  display: inline-block;
 }
 
 div {
   display: inline-block;
   max-width: 25rem;
   padding: 0 2em 0 0;
+  text-align: left;
 }
 
 section {
@@ -26,10 +43,11 @@ section {
   vertical-align: middle;
 }
 
-h2 {
-  padding: 1em;
-}
-
-a {
+.btn {
   text-align: center;
+  text-decoration: none;
+  border: 3px solid #333;
+  border-radius: 3px;
+  padding: 0.4em 0.75em 0.5em;
+  border-radius: 3px;
 }
